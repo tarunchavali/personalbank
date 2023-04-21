@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cash Withdrawal</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+	<header class="jumbotron text-center">
+		<h1>Cash Withdrawal</h1>
+	</header>
+	<main class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<button class="btn btn-primary btn-block">$5</button>
+				<button class="btn btn-primary btn-block">$10</button>
+				<button class="btn btn-primary btn-block">$20</button>
+				<button class="btn btn-primary btn-block">$50</button>
+				<button class="btn btn-primary btn-block">$100</button>
+				<button class="btn btn-secondary btn-block" id="custom-amount-btn">Custom Amount</button>
+				<div class="form-group" id="custom-amount-div" style="display: none;">
+					<label for="custom-amount-field">Enter Custom Amount:</label>
+					<input type="text" class="form-control" id="custom-amount-field">
+				</div>
+			</div>
+			<div class="col-md-6">
+				<button class="btn btn-secondary btn-block">Help</button>
+			</div>
+		</div>
+	</main>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#custom-amount-btn').click(function() {
+				$('#custom-amount-div').toggle();
+			});
+		});
+	</script>
+</body>
+</html>
