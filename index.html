@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Personal Banking</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			text-align: center;
+		}
+
+		.header {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 10px;
+			background-color: #f2f2f2;
+		}
+
+		h1 {
+			margin: 0;
+			font-size: 32px;
+		}
+
+		.button {
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			padding: 10px;
+			font-size: 16px;
+			cursor: pointer;
+			border-radius: 5px;
+		}
+
+		.button:hover {
+			background-color: #3e8e41;
+		}
+
+		.container {
+			display: flex;
+			height: calc(100vh - 70px);
+			flex-wrap: wrap;
+		}
+
+		.left {
+			display: flex;
+			flex-direction: column;
+			flex-basis: 50%;
+			justify-content: center;
+			align-items: center;
+			background-color: #f2f2f2;
+		}
+
+		.right {
+			display: flex;
+			flex-direction: column;
+			flex-basis: 50%;
+			justify-content: center;
+			align-items: center;
+		}
+
+		label {
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+
+		input[type=text] {
+			padding: 10px;
+			font-size: 16px;
+			border-radius: 5px;
+			border: none;
+			box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+			margin-bottom: 20px;
+		}
+
+		.keypad {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: repeat(4, 1fr);
+			grid-gap: 10px;
+			margin-top: 20px;
+			width: 200px;
+		}
+
+		.keypad button {
+			background-color: #f2f2f2;
+			color: black;
+			border: none;
+			padding: 10px;
+			font-size: 16px;
+			cursor: pointer;
+			border-radius: 5px;
+		}
+
+		.keypad button:hover {
+			background-color: #d9d9d9;
+		}
+
+		.keypad .zero {
+			grid-column-start: 1;
+			grid-column-end: 3;
+		}
+
+		.keypad .cancel, .keypad .enter {
+			grid-row-start: 4;
+			grid-row-end: 5;
+		}
+
+		.keypad .cancel {
+			grid-column-start: 1;
+			grid-column-end: 2;
+		}
+
+		.keypad .enter {
+			grid-column-start: 3;
+			grid-column-end: 4;
+		}
+	</style>
+</head>
+<body>
+	<header class="header">
+		<h1>Personal Banking</h1>
+		<button class="button">Help</button>
+	</header>
+
+	<div class="container">
+		<div class="left">
+			<h2>Language Preferences</h2>
+			<button class="button">English</button>
+			<button class="button">Spanish</button>
+		</div>
+		<div class="right
+        <h2>Enter ATM PIN</h2>
+        <form>
+            <label for="pin">Enter yout PIN:</label>
+            <input type="password" id="pin" maxlength="4" size="4">
+
+            <div class="keypad">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button>0</button>
+                <button class="cancel">Cancel</button>
+    
+                <button><a href="page2.html">Enter</a></button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
